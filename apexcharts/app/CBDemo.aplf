@@ -1,0 +1,8 @@
+ CBDemo args
+ :Select ⊃args
+ :Case 'F1.BBAR' ⋄ SimpleBar
+ :Case 'F1.BHBAR' ⋄ HorizontalBar
+ :Case 'F1.BSINE' ⋄ SineWave
+ :Case 'F1.BMOV' ⋄ MovAvg
+ :Case 'F1.BCANDLE' ⋄ CandleStick
+ :EndSelect

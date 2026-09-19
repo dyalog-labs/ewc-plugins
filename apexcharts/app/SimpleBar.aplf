@@ -1,0 +1,6 @@
+ SimpleBar;series
+ clearChart
+ series←+\?2 10⍴2
+
+ 'F1.NEW'eWC'Button' 'New Data'(70 520)(23 80)('Event' 'Select' 'CBSimpleBar')
+ 'F1.CHART'eWC'XApexChart'(100 10)(540 780)series'bar'('Event'('click' 'legendclick')'CBSimpleBar')

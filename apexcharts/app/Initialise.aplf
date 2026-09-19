@@ -1,0 +1,20 @@
+ Initialise connected
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'ApexCharts plugin'(30 30)(680 800)('Coord' 'Pixel')
+
+ 'F1.LABEL'eWC'Label' 'File:'(10 10)(23 40)
+ 'F1.FILE'eWC'Edit' '/tmp/ewc-chart.svg'(10 55)(23 300)
+ 'F1.SAVE'eWC'Button' 'Save SVG'(10 370)(23 80)('Event' 'Select' 'CBSaveChart'('F1.FILE' 'F1.CHART'))
+
+ 'F1.BBAR'eWC'Button' 'Bar'(40 10)(23 70)('Event' 'Select' 'CBDemo')
+ 'F1.BHBAR'eWC'Button' 'Horizontal'(40 85)(23 90)('Event' 'Select' 'CBDemo')
+ 'F1.BSINE'eWC'Button' 'Sine wave'(40 180)(23 90)('Event' 'Select' 'CBDemo')
+ 'F1.BMOV'eWC'Button' 'Moving avg'(40 275)(23 95)('Event' 'Select' 'CBDemo')
+ 'F1.BCANDLE'eWC'Button' 'Candlestick'(40 375)(23 95)('Event' 'Select' 'CBDemo')
+
+ 'F1.OUT'eWC'Label' 'Click on a bar'(70 10)(23 500)
+
+ SimpleBar
+
+ {}eDQ'F1'

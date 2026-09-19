@@ -1,0 +1,3 @@
+ RunMulti
+⍝ Start the demo app for several independent users.
+ Start'Multi'

@@ -1,0 +1,7 @@
+ Run
+⍝ Start the demo app for a single user.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create ApexChartsPlugin ~/dev/ewc-plugins/apexcharts/APLSource
+⍝     ]link.create ApexApp         ~/dev/ewc-plugins/apexcharts/app
+⍝     ApexApp.Run
+ Start'Browser'
