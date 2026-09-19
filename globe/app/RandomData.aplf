@@ -1,0 +1,7 @@
+ r←RandomData;c
+⍝ (ISO-3166 alpha-3 code, value) pairs - stand-in for whatever your
+⍝ application actually knows about the world. Roughly 10% of countries are
+⍝ left out each time, to show the no-data state.
+ c←⊃,/COUNTRIES ⍝ the .apla lays the codes out in rows
+ c←(0.1<?(≢c)⍴0)/c
+ r←c,⍪?(≢c)⍴100

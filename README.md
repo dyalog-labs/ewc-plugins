@@ -8,3 +8,4 @@ per plugin.
 | [fireworks](fireworks/) | A `Fireworks` full-page overlay class - the User Guide's worked example |
 | [kendo](kendo/) | `KendoChart`, `KendoGrid`, `KendoSankey` - a plugin for Kendo (bring your own licence) |
 | [apexcharts](apexcharts/) | `ApexChart` - a plugin for ApexCharts (mind the licence terms) |
+| [globe](globe/) | `Globe` - a 3D choropleth over globe.gl, built in the User Guide's plugin tutorial |

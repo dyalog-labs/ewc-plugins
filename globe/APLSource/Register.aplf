@@ -1,0 +1,17 @@
+ {r}←Register;plugin;folder
+⍝ Register this plugin with EWC. Safe before or after EWC.Init.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create GlobePlugin ~/dev/ewc-plugins/globe/APLSource
+⍝     GlobePlugin.Register
+⍝     EWC.Init 'Browser'
+ folder←Folder
+
+⍝ Name, Folder (location on disk), Classes for EWC, Resources/static assets, Inject this JS
+ plugin←⎕NS''
+ plugin.Name←'Globe'
+ plugin.Folder←folder
+ plugin.Resources←'globe'(folder,'/assets')
+ plugin.Classes←classes
+ plugin.Inject←Inject
+
+ r←#.EWC.RegisterPlugin plugin

@@ -1,0 +1,13 @@
+ Initialise connected
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'Globe plugin'(30 30)(660 820)('Coord' 'Pixel')
+ 'F1.NEW'eWC'Button' 'New Data'(10 10)(23 80)('Event' 'Select' 'CBNewData')
+ 'F1.OUT'eWC'Label' 'Click a country'(10 105)(23 500)
+
+⍝ The globe lives in an ordinary SubForm: plugin classes nest in core
+⍝ containers like any other
+ 'F1.SF'eWC'SubForm'('Posn' 45 10)('Size' 595 790)
+ 'F1.SF.G'eWC'Globe'('Posn' 10 10)('Size' 570 765)('Values'RandomData)('Event' 'click' 'CBGlobe')
+
+ {}eDQ'F1'

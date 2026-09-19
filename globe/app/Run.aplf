@@ -1,0 +1,7 @@
+ Run
+⍝ Start the demo app for a single user.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create GlobePlugin ~/dev/ewc-plugins/globe/APLSource
+⍝     ]link.create GlobeApp    ~/dev/ewc-plugins/globe/app
+⍝     GlobeApp.Run
+ Start'Browser'

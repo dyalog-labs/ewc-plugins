@@ -1,0 +1,4 @@
+ CBGlobe args;info
+⍝ Info is (code name value), sent by the plugin's component
+ info←2↓args
+ 'F1.OUT'eWS'Caption'((2⊃info),' (',(⊃info),'): ',⍕3⊃info)
