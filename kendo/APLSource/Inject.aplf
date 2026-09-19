@@ -1,0 +1,6 @@
+ r←Inject
+⍝ The JavaScript EWC evaluates in the client the first time one of this
+⍝ plugin's classes is created.
+⍝ Register mounts assets/ as the virtual folder /kendo/, so this is an
+⍝ ordinary ES module import.
+ r←'import(window.EWC.url("/kendo/ewc-kendo.js")).then(m => m.register(window.EWC))'

@@ -1,0 +1,2 @@
+ CBGridCell args
+ 'F1.OUT'eWS'Caption'('Grid button: ',⍕⊃2↓args)

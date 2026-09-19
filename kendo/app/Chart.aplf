@@ -1,0 +1,3 @@
+ Chart;series
+ series←+\?2 10⍴2
+ 'F1.BAR'eWC'KendoChart'(40 10)(280 970)series'bar'('Event'('click' 'legendclick') 'CBSimpleBar')

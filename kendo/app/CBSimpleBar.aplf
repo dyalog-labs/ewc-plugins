@@ -1,0 +1,6 @@
+ CBSimpleBar args
+ :If 'F1.NEW'≡⊃args
+     'F1.BAR'eWS'Series'(+\?2 10⍴2)
+ :Else
+     'F1.OUT'eWS'Caption'((2⊃args),' on ',⍕2↓args)
+ :EndIf

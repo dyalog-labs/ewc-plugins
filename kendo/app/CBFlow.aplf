@@ -1,0 +1,2 @@
+ CBFlow args
+ 'F1.OUT'eWS'Caption'((2⊃args),': ',(⊃2↓args),' (',(⍕2⊃2↓args),')')

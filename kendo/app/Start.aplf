@@ -1,0 +1,17 @@
+ Start mode
+⍝ Register the plugin and start EWC in the given mode. Run and RunMulti are the
+⍝ entry points; this is the shared part.
+⍝
+⍝ The form itself is built by Initialise, which EWC calls once per browser
+⍝ connection. Building it here would serve only the first browser and leave a
+⍝ reload showing a blank page.
+ EWC←#.EWC
+ EWC.PORT←22322
+
+⍝ Before Init here, but after would work equally well - a plugin may register at
+⍝ any point in a session.
+ #.KendoPlugin.Register
+
+ EWC.Init mode
+
+ ⎕←'Open http://localhost:',(⍕EWC.PORT),'/ - leave this session running'

@@ -6,3 +6,4 @@ per plugin.
 | Plugin | What it provides |
 |--------|------------------|
 | [fireworks](fireworks/) | A `Fireworks` full-page overlay class - the User Guide's worked example |
+| [kendo](kendo/) | `KendoChart`, `KendoGrid`, `KendoSankey` - a plugin for Kendo (bring your own licence) |
