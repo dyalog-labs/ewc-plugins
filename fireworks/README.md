@@ -1,8 +1,8 @@
 # fireworks
 
 A fireworks overlay for [EWC](https://github.com/Dyalog/ewc), delivered as a
-plugin. It is the worked example in the EWC User Guide's *Implementing Plugins*
-page. It's intended to be extremely simple as a demo plugin.
+plugin. It's intended to be extremely simple as a demo plugin - the smallest
+complete example of the plugin contract.
 
 ## Using it
 
