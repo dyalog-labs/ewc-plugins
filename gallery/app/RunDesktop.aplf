@@ -1,0 +1,3 @@
+ RunDesktop
+⍝ Start the gallery in its own native window.
+ Start'Desktop'

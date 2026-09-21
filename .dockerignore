@@ -1,0 +1,6 @@
+.git
+.earwig
+**/node_modules
+**/assets/ewc-kendo.*
+**/assets/ewc-apexcharts.*
+**/.DS_Store

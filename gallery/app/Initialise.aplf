@@ -1,0 +1,23 @@
+ Initialise connected;tabs;i;name;folder;app;tb;sf
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'EWC Plugin Gallery'(30 30)(1090 1010)('Coord' 'Pixel')
+ 'F1.TC'eWC'TabControl'('Posn'(0 0))('Size'(1090 1010))
+
+ tabs←,⊂('Fireworks' 'fireworks' #.FireworksApp)
+ tabs,←⊂('Globe' 'globe' #.GlobeApp)
+ tabs,←⊂('ApexCharts' 'apexcharts' #.ApexApp)
+ tabs,←⊂('Kendo' 'kendo' #.KendoApp)
+
+ :For i :In ⍳≢tabs
+     (name folder app)←i⊃tabs
+     (tb←'F1.TC.T',⍕i)eWC'TabButton'('Caption'name)
+⍝ The client forces a TabObj SubForm to Posn 0 0 over the whole TabControl,
+⍝ tab strip included; the translate pushes the page below the strip
+     (sf←'F1.TC.SF',⍕i)eWC'SubForm'('TabObj'tb)('CSS' 'transform: translateY(30px)')
+     (sf,'.LINK')eWC'Link'('https://github.com/dyalog-labs/ewc-plugins/tree/main/',folder)('ewc-plugins/',folder)('Posn' 10 720)
+     (('T',(⍕i),'_')sf)Reroot app
+     ⍎'T',(⍕i),'_Initialise 1'
+ :EndFor
+
+ {}eDQ'F1'

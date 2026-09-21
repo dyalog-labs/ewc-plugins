@@ -1,0 +1,12 @@
+ Start mode
+⍝ Beware hard-coded port, but this is a demo only
+ EWC←#.EWC
+ EWC.PORT←22322
+
+ #.FireworksPlugin.Register
+ #.GlobePlugin.Register
+ #.ApexChartsPlugin.Register
+ #.KendoPlugin.Register
+ EWC.Init mode
+
+ ⎕←'Open http://localhost:',(⍕EWC.PORT),'/'
