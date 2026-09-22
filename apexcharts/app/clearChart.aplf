@@ -1,0 +1,5 @@
+ clearChart
+⍝ Remove the current demo's objects before building the next one's
+ eEX'F1.CHART'
+ eEX'F1.TM'
+ eEX'F1.NEW'

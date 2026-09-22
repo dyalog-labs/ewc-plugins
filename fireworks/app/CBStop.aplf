@@ -1,0 +1,6 @@
+ CBStop args
+⍝ Stopping is just a property change. Before the first Start there is nothing
+⍝ to stop.
+ :If 9=⎕NC'F1.FW'
+     'F1.FW'eWS'Running' 0
+ :EndIf

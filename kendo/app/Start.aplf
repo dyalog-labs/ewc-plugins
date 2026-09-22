@@ -1,0 +1,21 @@
+ Start mode
+⍝ Register the plugin and start the demo app. mode goes straight to EWC.Init:
+⍝ 'Browser' for a single user, 'Multi' for several independent users.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create KendoPlugin ~/dev/ewc-plugins/kendo/APLSource
+⍝     ]link.create KendoApp    ~/dev/ewc-plugins/kendo/app
+⍝     KendoApp.Start 'Browser'
+⍝
+⍝ The form itself is built by Initialise, which EWC calls once per browser
+⍝ connection. Building it here would serve only the first browser and leave a
+⍝ reload showing a blank page.
+ EWC←#.EWC
+ EWC.PORT←22322
+
+⍝ Before Init here, but after would work equally well - a plugin may register at
+⍝ any point in a session.
+ #.KendoPlugin.Register
+
+ EWC.Init mode
+
+ ⎕←'Open http://localhost:',(⍕EWC.PORT),'/ - leave this session running'

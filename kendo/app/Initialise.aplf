@@ -1,0 +1,12 @@
+ Initialise connected
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'Kendo plugin'(30 30)(1060 1000)('Coord' 'Pixel')
+ 'F1.NEW'eWC'Button' 'New Data'(8 10)(23 80)('Event' 'Select' 'CBSimpleBar')
+ 'F1.OUT'eWC'Label' 'Click a bar, a flow, or a grid button'(13 100)(23 600)
+
+ Chart
+ Flow
+ Grid
+
+ {}eDQ'F1'

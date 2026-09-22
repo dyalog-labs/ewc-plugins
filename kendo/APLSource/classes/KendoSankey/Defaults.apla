@@ -1,0 +1,12 @@
+(
+ 'KendoSankey'
+ 10 10
+ 300 500
+ ⍬
+ ⍬
+ ''
+ ⍬
+ ⍬
+ ⍬
+ ('Type' 'Posn' 'Size' 'Links' 'Options' 'Event' 'MethodList' 'ChildList' 'EventList' 'PropList')
+)

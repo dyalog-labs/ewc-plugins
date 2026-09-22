@@ -1,0 +1,12 @@
+node_modules/
+
+# Your own Progress licence key. Never commit this.
+kendo-ui-license.txt
+js/kendo-ui-license.txt
+
+.DS_Store
+
+# The built bundle compiles Kendo's code into it, and Kendo is commercial
+# software this repository may not redistribute. Build it locally:
+#     cd js && npm install && npm run build
+assets/

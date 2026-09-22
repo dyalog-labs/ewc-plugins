@@ -1,0 +1,9 @@
+ CBStart args
+⍝ The first click creates the overlay object - which is what makes EWC fetch
+⍝ and inject the plugin's JavaScript - and later clicks just restart it.
+⍝ Running defaults to 1, so creating the object is enough to start the show.
+ :If 9=⎕NC'F1.FW'
+     'F1.FW'eWS'Running' 1
+ :Else
+     'F1.FW'eWC'Fireworks'
+ :EndIf

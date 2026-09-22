@@ -1,0 +1,8 @@
+ Initialise connected
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'Fireworks plugin'(30 30)(150 260)('Coord' 'Pixel')
+ 'F1.START'eWC'Button' '🎆 Start the fireworks! 🎇'('Posn' 30 30)('Size' 30 200)('Event' 'Select' 'CBStart')
+ 'F1.STOP'eWC'Button' '😞 Stop the fireworks 😞'('Posn' 80 30)('Size' 30 200)('Event' 'Select' 'CBStop')
+
+ {}eDQ'F1'

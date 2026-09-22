@@ -1,0 +1,6 @@
+ r←Inject
+⍝ The JavaScript EWC evaluates in the client the first time a Globe object is
+⍝ created.
+⍝ Register mounts assets/ as the virtual folder /globe/, so this is an
+⍝ ordinary ES module import.
+ r←'import(window.EWC.url("/globe/globe.js")).then(m => m.register(window.EWC))'

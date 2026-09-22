@@ -1,0 +1,16 @@
+ Start mode
+⍝ Register the plugin and start the demo app. mode goes straight to EWC.Init:
+⍝ 'Browser' for a single user, 'Multi' for several independent users,
+⍝ 'Desktop' for a native window.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create GlobePlugin ~/dev/ewc-plugins/globe/APLSource
+⍝     ]link.create GlobeApp    ~/dev/ewc-plugins/globe/app
+⍝     GlobeApp.Start 'Browser'
+⍝ Beware hard-coded port, but this is a demo only
+ EWC←#.EWC
+ EWC.PORT←22322
+
+ #.GlobePlugin.Register
+ EWC.Init mode
+
+ ⎕←'Open http://localhost:',(⍕EWC.PORT),'/'

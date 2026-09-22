@@ -1,0 +1,12 @@
+ Grid;titles;vals;opts
+ titles←'Name' 'Value' 'Action'
+ vals←3 3⍴'Alpha' 10 'Ping' 'Beta' 25 'Pong' 'Gamma' 7 'Ping'
+
+ opts←⎕NS''
+ opts.filterable←1
+ opts.sortable←1
+ opts.filterableCols←('Name' '')('Value' 'numeric')
+ opts.sortableCols←'Name' 'Value'
+ opts.columnTypes←,⊂'Action' 'Button'
+
+ 'F1.GRID'eWC'KendoGrid'('Posn' 690 10)('Size' 340 970)('ColTitles'titles)('Values'vals)('Options'opts)('Event' 'Select' 'CBGridCell')

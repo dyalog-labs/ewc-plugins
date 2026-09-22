@@ -1,0 +1,8 @@
+node_modules/
+
+.DS_Store
+
+# The built bundle compiles ApexCharts' code into it, which this repository
+# may not redistribute. Build it locally:
+#     cd js && npm install && npm run build
+assets/

@@ -1,0 +1,6 @@
+ r←Inject
+⍝ The JavaScript EWC evaluates in the client the first time a Fireworks object
+⍝ is created.
+⍝ Register mounts assets/ as the virtual folder /fireworks/, so this is an
+⍝ ordinary ES module import.
+ r←'import(window.EWC.url("/fireworks/fireworks.js")).then(m => m.register(window.EWC))'

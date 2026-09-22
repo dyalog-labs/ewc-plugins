@@ -1,0 +1,34 @@
+ pfx Reroot app;t;p;fns;vars;names;src;f;v;n;m;r;bound
+⍝ Give a demo app's objects a new root: refix its code into ⎕THIS with the
+⍝ 'F1.' names re-rooted under a tab's SubForm, and its function/variable
+⍝ names prefixed so four demos can coexist.
+⍝
+⍝ pfx is (nameprefix objroot), e.g. 'T2_' 'F1.TC.SF2'. The demo apps stay
+⍝ exactly as they are - the gallery is the hack, and it is confined here.
+ (t p)←pfx
+ bound←{'(?<![A-Za-z0-9_∆⍙])',⍵,'(?![A-Za-z0-9_∆⍙])'}
+
+ fns←(app.⎕NL ¯3)~⊂'Start'
+ vars←app.⎕NL ¯2
+
+ :For v :In vars
+     ⍎'⎕THIS.',t,v,'←app.',v
+ :EndFor
+
+ :For f :In fns
+     src←app.⎕NR f
+
+     :If f≡'Initialise' ⍝ The gallery provides the Form, the tab and the ⎕DQ
+         m←(∨/¨(⊂'''Form''')⍷¨src)∨(∨/¨(⊂'CONNECTED')⍷¨src)∨∨/¨(⊂'eDQ')⍷¨src
+         src←(~m)/src
+     :EndIf
+
+     src←('''F1\.'⎕R('''',p,'.'))src        ⍝ re-root object names
+     :For n :In fns,vars                    ⍝ avoid cross-app name collisions
+         src←((bound n)⎕R(t,n))src
+     :EndFor
+
+     :If ' '≠⊃0⍴r←⎕FX src
+         ('Reroot of ',f,' failed at line ',⍕r)⎕SIGNAL 11
+     :EndIf
+ :EndFor

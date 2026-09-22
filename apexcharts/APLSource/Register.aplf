@@ -1,0 +1,17 @@
+ {r}←Register;plugin;folder
+⍝ Register this plugin with EWC. Safe before or after EWC.Init.
+⍝     ]link.create ~/dev/ewc/EWC
+⍝     ]link.create ApexChartsPlugin ~/dev/ewc-plugins/apexcharts/APLSource
+⍝     ApexChartsPlugin.Register
+⍝     EWC.Init 'Browser'
+ folder←Folder
+
+⍝ Name, Folder (location on disk), Classes for EWC, Resources/static assets, Inject this JS
+ plugin←⎕NS''
+ plugin.Name←'ApexCharts'
+ plugin.Folder←folder
+ plugin.Classes←classes
+ plugin.Resources←'apexcharts'(folder,'/assets')
+ plugin.Inject←Inject
+
+ r←#.EWC.RegisterPlugin plugin

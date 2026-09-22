@@ -1,0 +1,12 @@
+ Flow;links
+ links←0 3⍴⊂''
+ links⍪←'Coal' 'Electricity' 40
+ links⍪←'Gas' 'Electricity' 35
+ links⍪←'Nuclear' 'Electricity' 15
+ links⍪←'Wind' 'Electricity' 20
+ links⍪←'Solar' 'Electricity' 10
+ links⍪←'Electricity' 'Industry' 45
+ links⍪←'Electricity' 'Homes' 40
+ links⍪←'Electricity' 'Losses' 35
+
+ 'F1.FLOW'eWC'KendoSankey'('Posn' 335 10)('Size' 340 970)('Links'links)('Event'('NodeClick' 'LinkClick') 'CBFlow')
