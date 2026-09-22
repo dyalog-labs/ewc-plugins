@@ -20,8 +20,9 @@ first (`cd kendo/js && npm install && npm run build`); the other tabs fetch
 their engines from CDNs at runtime.
 
 Or from Dyalog: link everything as `run.sh` does - `EWC`, each plugin's
-`APLSource` and `app`, and `gallery/app` as `Gallery` - then `Gallery.Run`
-(one user) or `Gallery.RunMulti` (a clone per connection).
+`APLSource` and `app`, and `gallery/app` as `Gallery` - then
+`Gallery.Start 'Browser'` (one user), `Gallery.Start 'Multi'` (a clone per
+connection) or `Gallery.Start 'Desktop'` (a native window).
 
 ## Docker
 

@@ -58,5 +58,7 @@ Or from Dyalog:
       ]link.create ~/dev/ewc/EWC
       ]link.create ApexChartsPlugin ~/dev/ewc-plugins/apexcharts/APLSource
       ]link.create ApexApp         ~/dev/ewc-plugins/apexcharts/app
-      ApexApp.Run
+      ApexApp.Start 'Browser'
 ```
+
+`ApexApp.Start 'Multi'` gives every browser its own independent copy.

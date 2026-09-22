@@ -46,7 +46,8 @@ Or from Dyalog:
       ]link.create ~/dev/ewc/EWC
       ]link.create GlobePlugin ~/dev/ewc-plugins/globe/APLSource
       ]link.create GlobeApp    ~/dev/ewc-plugins/globe/app
-      GlobeApp.Run
+      GlobeApp.Start 'Browser'
 ```
 
-`GlobeApp.RunDesktop` runs the same app in its own native window.
+`GlobeApp.Start 'Desktop'` runs the same app in its own native window, and
+`GlobeApp.Start 'Multi'` gives every browser its own independent copy.

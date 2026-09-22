@@ -1,7 +1,0 @@
- Run
-⍝ Start the demo app for a single user.
-⍝     ]link.create ~/dev/ewc/EWC
-⍝     ]link.create FireworksPlugin ~/dev/ewc-plugins/fireworks/APLSource
-⍝     ]link.create FireworksApp    ~/dev/ewc-plugins/fireworks/app
-⍝     FireworksApp.Run
- Start'Browser'

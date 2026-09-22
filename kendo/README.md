@@ -65,5 +65,7 @@ Or from Dyalog:
       ]link.create ~/dev/ewc/EWC
       ]link.create KendoPlugin ~/dev/ewc-plugins/kendo/APLSource
       ]link.create KendoApp    ~/dev/ewc-plugins/kendo/app
-      KendoApp.Run
+      KendoApp.Start 'Browser'
 ```
+
+`KendoApp.Start 'Multi'` gives every browser its own independent copy.

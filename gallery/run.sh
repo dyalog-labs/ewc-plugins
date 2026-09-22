@@ -30,7 +30,7 @@ fi
 ]link.create KendoApp $ROOT/kendo/app
 ]link.create Gallery $HERE/app
 #.EWC.FOLDER←'$EWC'
-Gallery.Run
+Gallery.Start 'Browser'
 APL
   sleep 100000
 } | dyalog +s -q

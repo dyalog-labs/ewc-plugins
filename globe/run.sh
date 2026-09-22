@@ -17,7 +17,7 @@ fi
 ]link.create GlobePlugin $HERE/APLSource
 ]link.create GlobeApp $HERE/app
 #.EWC.FOLDER←'$EWC'
-GlobeApp.Run
+GlobeApp.Start 'Browser'
 APL
   sleep 100000
 } | dyalog +s -q

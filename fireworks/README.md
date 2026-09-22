@@ -47,9 +47,7 @@ assets/
   fireworks.js                 the component; served at /fireworks/
 
 app/                           the demo app
-  Run.aplf                     single user
-  RunMulti.aplf                several independent users
-  Start.aplf                   registers the plugin and starts EWC
+  Start.aplf                   registers the plugin and starts EWC in the given mode
   Initialise.aplf              EWC calls this per browser connection
   CBStart.aplf CBStop.aplf     the two buttons
 
@@ -69,5 +67,7 @@ more useful form while developing:
       ]link.create ~/dev/ewc/EWC
       ]link.create FireworksPlugin ~/dev/ewc-plugins/fireworks/APLSource
       ]link.create FireworksApp    ~/dev/ewc-plugins/fireworks/app
-      FireworksApp.Run
+      FireworksApp.Start 'Browser'
 ```
+
+`FireworksApp.Start 'Multi'` gives every browser its own independent copy.

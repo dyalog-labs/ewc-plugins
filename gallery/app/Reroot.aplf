@@ -8,7 +8,7 @@
  (t p)←pfx
  bound←{'(?<![A-Za-z0-9_∆⍙])',⍵,'(?![A-Za-z0-9_∆⍙])'}
 
- fns←(app.⎕NL ¯3)~'Run' 'RunMulti' 'RunDesktop' 'Start'
+ fns←(app.⎕NL ¯3)~⊂'Start'
  vars←app.⎕NL ¯2
 
  :For v :In vars

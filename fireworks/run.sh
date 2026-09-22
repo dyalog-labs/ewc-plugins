@@ -17,7 +17,7 @@ fi
 ]link.create FireworksPlugin $HERE/APLSource
 ]link.create FireworksApp $HERE/app
 #.EWC.FOLDER←'$EWC'
-FireworksApp.Run
+FireworksApp.Start 'Browser'
 APL
   sleep 100000
 } | dyalog +s -q

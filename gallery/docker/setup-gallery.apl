@@ -14,4 +14,4 @@
 ]link.create KendoApp /work/plugins/kendo/app
 ]link.create Gallery /work/plugins/gallery/app
 EWC.FOLDER←'/work/ewc'
-Gallery.RunMulti
+Gallery.Start 'Multi'

@@ -22,7 +22,7 @@ fi
 ]link.create ApexChartsPlugin $HERE/APLSource
 ]link.create ApexApp $HERE/app
 #.EWC.FOLDER←'$EWC'
-ApexApp.Run
+ApexApp.Start 'Browser'
 APL
   sleep 100000
 } | dyalog +s -q

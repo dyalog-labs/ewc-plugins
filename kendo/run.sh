@@ -23,7 +23,7 @@ fi
 ]link.create KendoPlugin $HERE/APLSource
 ]link.create KendoApp $HERE/app
 #.EWC.FOLDER←'$EWC'
-KendoApp.Run
+KendoApp.Start 'Browser'
 APL
   sleep 100000
 } | dyalog +s -q
