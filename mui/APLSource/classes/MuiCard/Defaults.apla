@@ -1,0 +1,9 @@
+(
+ 'MuiCard'
+ ''
+ 10 10
+ 200 300
+ 1
+ ⍬
+ ('Type' 'Title' 'Posn' 'Size' 'Elevation' 'Event' 'PropList')
+)

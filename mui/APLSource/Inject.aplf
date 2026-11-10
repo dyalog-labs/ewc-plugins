@@ -1,0 +1,6 @@
+ r←Inject
+⍝ The JavaScript EWC evaluates in the client the first time one of this
+⍝ plugin's classes is created.
+⍝ Register mounts assets/ as the virtual folder /mui/, so this is an
+⍝ ordinary ES module import.
+ r←'import(window.EWC.url("/mui/ewc-mui.js")).then(m => m.register(window.EWC))'

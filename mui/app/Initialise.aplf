@@ -1,0 +1,20 @@
+ Initialise connected
+ EWC.CONNECTED←connected
+
+ 'F1'eWC'Form' 'MUI plugin'(30 30)(380 720)('Coord' 'Pixel')
+ 'F1.OUT'eWC'Label' 'Use a control - its event lands here'(12 10)(23 700)
+
+ 'F1.BTN'eWC'MuiButton' 'Contained'(50 10)(36 140)('Event' 'Select' 'CBMui')
+ 'F1.OUTL'eWC'MuiButton' 'Outlined'(50 160)(36 140)('Variant' 'outlined')('Color' 'secondary')('Event' 'Select' 'CBMui')
+ 'F1.TXT'eWC'MuiTextField' 'Hello'(105 10)(56 290)('Label' 'Name')('HelperText' 'Change fires on blur')('Event' 'Change' 'CBMui')
+ 'F1.SW'eWC'MuiSwitch' 'Notifications'(190 10)(38 290)('State' 1)('Event' 'Select' 'CBMui')
+ 'F1.SL'eWC'MuiSlider' 30(240 20)(40 270)('Limits'(0 50))('Event' 'Scroll' 'CBMui')
+ 'F1.SEL'eWC'MuiSelect'('Red' 'Green' 'Blue')(300 10)(40 290)('Label' 'Colour')('SelItems'(0 1 0))('Event' 'Select' 'CBMui')
+
+⍝ A MUI container holding ordinary EWC objects
+ 'F1.CARD'eWC'MuiCard' 'Native EWC objects'(50 330)(290 370)('Elevation' 3)
+ 'F1.CARD.ED'eWC'Edit' 'A native Edit'(80 20)(25 200)
+ 'F1.CARD.READ'eWC'Button' 'Read MUI values'(125 20)(30 160)('Event' 'Select' 'CBMui')
+ 'F1.CARD.SET'eWC'Button' 'Set them from APL'(170 20)(30 160)('Event' 'Select' 'CBMui')
+
+ {}eDQ'F1'

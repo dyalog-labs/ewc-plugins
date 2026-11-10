@@ -1,0 +1,18 @@
+ CBMui args;obj;msg
+⍝ One callback for the whole demo. The card's two native buttons read and set
+⍝ the MUI controls' values; everything else just reports its event.
+ obj←⊃args
+ :Select obj
+ :Case 'F1.CARD.READ'
+     msg←'Text: ',('F1.TXT'eWG'Text'),'  State: ',(⍕'F1.SW'eWG'State')
+     msg,←'  Value: ',(⍕'F1.SL'eWG'Value'),'  SelItems: ',⍕'F1.SEL'eWG'SelItems'
+ :Case 'F1.CARD.SET'
+     'F1.TXT'eWS'Text' 'Set by ⎕WS'
+     'F1.SW'eWS'State' 0
+     'F1.SL'eWS'Value' 45
+     'F1.SEL'eWS'SelItems'(0 0 1)
+     msg←'Set from APL'
+ :Else
+     msg←obj,' ',(2⊃args),': ',⍕2↓args
+ :EndSelect
+ 'F1.OUT'eWS'Caption'msg
