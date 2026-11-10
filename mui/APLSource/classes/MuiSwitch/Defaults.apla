@@ -1,0 +1,10 @@
+(
+ 'MuiSwitch'
+ ''
+ 10 10
+ 38 160
+ 0
+ 1
+ ⍬
+ ('Type' 'Caption' 'Posn' 'Size' 'State' 'Active' 'Event' 'PropList')
+)

@@ -1,0 +1,12 @@
+(
+ 'MuiTextField'
+ ''
+ 10 10
+ 56 200
+ ''
+ 'outlined'
+ ''
+ 1
+ ⍬
+ ('Type' 'Text' 'Posn' 'Size' 'Label' 'Variant' 'HelperText' 'Active' 'Event' 'PropList')
+)

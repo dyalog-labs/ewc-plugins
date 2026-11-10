@@ -1,0 +1,10 @@
+ r←Folder;links;m
+⍝ Where are we on disk? Check Link first, as it's the recommended path, otherwise
+⍝ signal and rely on the user
+ links←⎕SE.Link.Links
+ m←(⍕¨links.ns)∊⊂⍕⎕THIS
+ 'Unable to locate the package folder - pass one to Register'⎕SIGNAL(~∨/m)/11
+
+ r←⊃(m/links).dir
+ :If '/'=⊃⌽r ⋄ r←¯1↓r ⋄ :EndIf ⍝ Link may or may not include a trailing separator
+ r←¯1↓⊃⎕NPARTS r               ⍝ drop the source folder, and the separator

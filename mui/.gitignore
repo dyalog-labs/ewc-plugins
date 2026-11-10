@@ -1,0 +1,7 @@
+node_modules/
+
+.DS_Store
+
+# Built locally, as for the other plugins:
+#     cd js && npm install && npm run build
+assets/

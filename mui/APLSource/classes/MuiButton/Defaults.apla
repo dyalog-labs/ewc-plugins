@@ -1,0 +1,11 @@
+(
+ 'MuiButton'
+ ''
+ 10 10
+ 36 120
+ 'contained'
+ 'primary'
+ 1
+ ⍬
+ ('Type' 'Caption' 'Posn' 'Size' 'Variant' 'Color' 'Active' 'Event' 'PropList')
+)

@@ -1,0 +1,23 @@
+{
+  "name": "ewc-mui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Material UI components for EWC, built as a loadable plugin bundle",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "7.3.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.2.7"
+  },
+  "comment": "react-is is overridden to match the client React (18.3.1). MUI 7 depends on react-is 19, whose element checks do not recognise React 18 elements.",
+  "overrides": {
+    "react-is": "18.3.1"
+  }
+}
